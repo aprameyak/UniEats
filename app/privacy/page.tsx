@@ -183,9 +183,7 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy or our data practices, please contact us:
               </p>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <p><strong>Email:</strong> privacy@unieats.com</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Address:</strong> 123 Tech Street, San Francisco, CA 94105</p>
+                <p><strong>Email:</strong> <a href="mailto:aprameyakannan@gmail.com" className="hover:text-orange-600">aprameyakannan@gmail.com</a></p>
               </div>
             </div>
           </section>
