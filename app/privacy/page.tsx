@@ -144,7 +144,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Children&apos;s Privacy</h2>
             <div className="space-y-4 text-gray-600">
               <p>
                 UniEats is designed for university students and is not intended for children under 13. 
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
             <div className="space-y-4 text-gray-600">
               <p>
                 We may update this Privacy Policy from time to time. We will notify you of any changes 
-                by posting the new Privacy Policy on this page and updating the "Last updated" date. 
+                by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. 
                 We encourage you to review this Privacy Policy periodically.
               </p>
             </div>

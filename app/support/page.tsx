@@ -32,7 +32,7 @@ export default function SupportPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Support Center</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Need help with UniEats? We're here to assist you with any questions or issues you might have.
+            Need help with UniEats? We&apos;re here to assist you with any questions or issues you might have.
           </p>
         </div>
 
@@ -75,14 +75,14 @@ export default function SupportPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">How do I add my university to UniEats?</h3>
               <p className="text-gray-600">
-                To add your university, please contact our support team with your university's details including name, location, and student population. We'll review and add it to our platform.
+                To add your university, please contact our support team with your university&apos;s details including name, location, and student population. We&apos;ll review and add it to our platform.
               </p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">How can I report inappropriate content?</h3>
               <p className="text-gray-600">
-                You can report inappropriate content by tapping the three dots menu on any post and selecting "Report". Our moderation team will review the report within 24 hours.
+                You can report inappropriate content by tapping the three dots menu on any post and selecting &quot;Report&quot;. Our moderation team will review the report within 24 hours.
               </p>
             </div>
 
@@ -96,14 +96,14 @@ export default function SupportPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">How do I delete my account?</h3>
               <p className="text-gray-600">
-                You can delete your account by going to Settings > Account > Delete Account. Please note that this action is irreversible and will permanently remove all your data.
+                You can delete your account by going to Settings &gt; Account &gt; Delete Account. Please note that this action is irreversible and will permanently remove all your data.
               </p>
             </div>
 
             <div className="pb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">What should I do if I forgot my password?</h3>
               <p className="text-gray-600">
-                Use the "Forgot Password" option on the login screen. We'll send you an email with a link to reset your password. Make sure to check your spam folder if you don't see the email.
+                Use the &quot;Forgot Password&quot; option on the login screen. We&apos;ll send you an email with a link to reset your password. Make sure to check your spam folder if you don&apos;t see the email.
               </p>
             </div>
           </div>
