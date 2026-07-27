@@ -26,7 +26,7 @@ function TabNavigator() {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
-          let iconName: keyof typeof Ionicons.glyphMap;
+          let iconName: keyof typeof Ionicons.glyphMap = 'ellipse-outline';
 
           if (route.name === 'Feed') {
             iconName = focused ? 'restaurant' : 'restaurant-outline';

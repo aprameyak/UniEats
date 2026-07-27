@@ -116,7 +116,7 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
         {/* Action Buttons */}
         <View style={styles.actionSection}>
           <TouchableOpacity style={styles.actionButton}>
-            <Ionicons name="edit-outline" size={20} color="#666" />
+            <Ionicons name="create-outline" size={20} color="#666" />
             <Text style={styles.actionButtonText}>Edit Profile</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton}>
