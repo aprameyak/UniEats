@@ -48,7 +48,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           onPress: async () => {
             try {
               await AsyncStorage.removeItem('currentUser');
-              // Navigation will be handled by App.tsx
             } catch (error) {
               console.error('Error logging out:', error);
             }
@@ -69,7 +68,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        {/* Header */}
         <View style={styles.header}>
           <Text style={styles.headerTitle}>Profile</Text>
           <TouchableOpacity style={styles.settingsButton}>
@@ -77,7 +75,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </TouchableOpacity>
         </View>
 
-        {/* Profile Info */}
         <View style={styles.profileSection}>
           <Image
             source={{ uri: user.photoUrl || 'https://via.placeholder.com/100' }}
@@ -95,7 +92,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </View>
         </View>
 
-        {/* Stats */}
         <View style={styles.statsSection}>
           <View style={styles.statItem}>
             <Text style={styles.statNumber}>12</Text>
@@ -113,7 +109,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </View>
         </View>
 
-        {/* Action Buttons */}
         <View style={styles.actionSection}>
           <TouchableOpacity style={styles.actionButton}>
             <Ionicons name="create-outline" size={20} color="#666" />
@@ -125,7 +120,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </TouchableOpacity>
         </View>
 
-        {/* Tabs */}
         <View style={styles.tabSection}>
           <View style={styles.tabContainer}>
             <TouchableOpacity
@@ -147,7 +141,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </View>
         </View>
 
-        {/* Content based on active tab */}
         {activeTab === 'statuses' ? (
           <View style={styles.contentSection}>
             <View style={styles.emptyState}>
@@ -182,7 +175,6 @@ export default function ProfileScreen({ navigation }: ProfileScreenProps) {
           </View>
         )}
 
-        {/* Logout Button */}
         <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
           <Ionicons name="log-out-outline" size={20} color="#FF6B6B" />
           <Text style={styles.logoutButtonText}>Logout</Text>

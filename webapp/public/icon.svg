@@ -1,33 +1,25 @@
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
   <circle cx="512" cy="512" r="512" fill="#FF6B6B"/>
   
-  <!-- Plate -->
   <ellipse cx="512" cy="600" rx="200" ry="80" fill="white" opacity="0.9"/>
   
-  <!-- Fork -->
   <rect x="380" y="400" width="8" height="160" rx="4" fill="white"/>
   <rect x="384" y="400" width="8" height="160" rx="4" fill="white"/>
   <rect x="388" y="400" width="8" height="160" rx="4" fill="white"/>
   <rect x="392" y="400" width="8" height="160" rx="4" fill="white"/>
   
-  <!-- Spoon -->
   <rect x="640" y="400" width="8" height="160" rx="4" fill="white"/>
   <ellipse cx="644" cy="400" rx="12" ry="8" fill="white"/>
   
-  <!-- Food items on plate -->
   <circle cx="480" cy="580" r="15" fill="#4ECDC4"/>
   <circle cx="520" cy="620" r="12" fill="#FFE66D"/>
   <circle cx="560" cy="580" r="18" fill="#95E1D3"/>
   <circle cx="500" cy="640" r="10" fill="#FF8A80"/>
   
-  <!-- People icons -->
   <circle cx="400" cy="300" r="25" fill="white"/>
   <circle cx="624" cy="300" r="25" fill="white"/>
   
-  <!-- Connection line between people -->
   <path d="M 425 300 Q 512 250 599 300" stroke="white" stroke-width="4" fill="none"/>
   
-  <!-- Heart symbol -->
   <path d="M 512 200 Q 512 180 532 180 Q 552 180 552 200 Q 552 220 512 240 Q 472 220 472 200 Q 472 180 492 180 Q 512 180 512 200" fill="white"/>
 </svg>

@@ -17,7 +17,6 @@ interface FriendSearchScreenProps {
   navigation: any;
 }
 
-// Mock data for friend suggestions
 const mockFriendSuggestions: User[] = [
   {
     uid: '4',
@@ -138,7 +137,6 @@ export default function FriendSearchScreen({ navigation }: FriendSearchScreenPro
   };
 
   const handleAddFriend = (uid: string) => {
-    // In a real app, this would send a friend request to the API
     console.log('Friend request sent to:', uid);
   };
 

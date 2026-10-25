@@ -52,8 +52,7 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
   const getCurrentLocation = async () => {
     try {
       const location = await Location.getCurrentPositionAsync({});
-      // Find nearest location from mock data
-      const nearestLocation = mockLocations[0]; // In real app, calculate nearest
+      const nearestLocation = mockLocations[0];
       setSelectedLocation(nearestLocation);
     } catch (error) {
       console.log('Error getting location:', error);
@@ -91,14 +90,13 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           status,
           location: selectedLocation,
           createdAt: new Date(),
-          expiresAt: new Date(Date.now() + 60 * 60000), // 1 hour from now
+          expiresAt: new Date(Date.now() + 60 * 60000),
           visibleTo: user.friends || [],
           campusMode,
           photoUrl: photo || undefined,
           description: description || undefined,
         };
 
-        // In a real app, this would be saved to API
         console.log('Created status:', newStatus);
         Alert.alert('Success', 'Status created successfully!', [
           { text: 'OK', onPress: () => navigation.goBack() }
@@ -114,7 +112,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity
             style={styles.backButton}
@@ -134,7 +131,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           </TouchableOpacity>
         </View>
 
-        {/* Status Type Selection */}
         <View style={styles.statusTypeContainer}>
           <TouchableOpacity
             style={[
@@ -177,7 +173,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           </TouchableOpacity>
         </View>
 
-        {/* Description */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>What's on your mind?</Text>
           <TextInput
@@ -191,7 +186,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           />
         </View>
 
-        {/* Photo */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Add Photo (Optional)</Text>
           <TouchableOpacity style={styles.photoButton} onPress={pickImage}>
@@ -206,7 +200,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           </TouchableOpacity>
         </View>
 
-        {/* Location */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Location</Text>
           <TouchableOpacity
@@ -255,7 +248,6 @@ export default function StatusCreateScreen({ navigation }: StatusCreateScreenPro
           )}
         </View>
 
-        {/* Campus Mode */}
         <View style={styles.section}>
           <View style={styles.campusModeContainer}>
             <View style={styles.campusModeInfo}>

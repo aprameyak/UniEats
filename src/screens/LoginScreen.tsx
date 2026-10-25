@@ -31,7 +31,6 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
 
     setIsLoading(true);
     try {
-      // Mock login - in real app, this would be an API call
       const mockUser: User = {
         uid: '1',
         username: 'sarah_j',
@@ -44,7 +43,6 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
       };
 
       await AsyncStorage.setItem('currentUser', JSON.stringify(mockUser));
-      // Navigation will be handled by App.tsx based on user state
     } catch (error) {
       Alert.alert('Error', 'Login failed. Please try again.');
     } finally {
@@ -59,14 +57,12 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
         style={styles.keyboardView}
       >
         <View style={styles.content}>
-          {/* Header */}
           <View style={styles.header}>
             <Ionicons name="restaurant" size={60} color="#FF6B6B" />
             <Text style={styles.title}>UniEats</Text>
             <Text style={styles.subtitle}>Connect with friends over food</Text>
           </View>
 
-          {/* Login Form */}
           <View style={styles.form}>
             <View style={styles.inputContainer}>
               <Ionicons name="mail-outline" size={20} color="#666" style={styles.inputIcon} />

@@ -17,7 +17,6 @@ interface MainFeedScreenProps {
   navigation: any;
 }
 
-// Mock data
 const mockUsers: User[] = [
   {
     uid: '1',
@@ -62,8 +61,8 @@ const mockStatuses: EatingStatus[] = [
       lat: 40.7128,
       lng: -74.0060
     },
-    createdAt: new Date(Date.now() - 10 * 60000), // 10 minutes ago
-    expiresAt: new Date(Date.now() + 45 * 60000), // 45 minutes from now
+    createdAt: new Date(Date.now() - 10 * 60000),
+    expiresAt: new Date(Date.now() + 45 * 60000),
     visibleTo: ['1', '3'],
     campusMode: false
   },
@@ -77,8 +76,8 @@ const mockStatuses: EatingStatus[] = [
       lat: 40.7130,
       lng: -74.0058
     },
-    createdAt: new Date(Date.now() - 5 * 60000), // 5 minutes ago
-    expiresAt: new Date(Date.now() + 25 * 60000), // 25 minutes from now
+    createdAt: new Date(Date.now() - 5 * 60000),
+    expiresAt: new Date(Date.now() + 25 * 60000),
     visibleTo: ['1', '2'],
     campusMode: true,
     photoUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop',
@@ -112,7 +111,6 @@ const StatusCard = ({ status, user }: { status: EatingStatus; user: User }) => {
 
   return (
     <View style={styles.statusCard}>
-      {/* User Info */}
       <View style={styles.userInfo}>
         <Image
           source={{ uri: user.photoUrl || 'https://via.placeholder.com/50' }}
@@ -127,7 +125,6 @@ const StatusCard = ({ status, user }: { status: EatingStatus; user: User }) => {
         </View>
       </View>
 
-      {/* Status Content */}
       <View style={styles.statusContent}>
         <View style={styles.statusHeader}>
           <View style={[styles.statusBadge, { backgroundColor: getStatusColor() }]}>
@@ -157,7 +154,6 @@ const StatusCard = ({ status, user }: { status: EatingStatus; user: User }) => {
         )}
       </View>
 
-      {/* Action Buttons */}
       <View style={styles.actionButtons}>
         <TouchableOpacity style={styles.actionButton}>
           <Ionicons name="chatbubble-outline" size={20} color="#666" />
@@ -181,7 +177,6 @@ export default function MainFeedScreen({ navigation }: MainFeedScreenProps) {
   }, []);
 
   const loadStatuses = async () => {
-    // In a real app, this would fetch from API
     setStatuses(mockStatuses);
   };
 
@@ -197,7 +192,6 @@ export default function MainFeedScreen({ navigation }: MainFeedScreenProps) {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>UniEats</Text>
         <TouchableOpacity
@@ -208,7 +202,6 @@ export default function MainFeedScreen({ navigation }: MainFeedScreenProps) {
         </TouchableOpacity>
       </View>
 
-      {/* Feed */}
       <FlatList
         data={statuses}
         keyExtractor={(item) => item.statusId}

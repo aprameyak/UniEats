@@ -6,7 +6,6 @@ import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// Import screens
 import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import ProfileSetupScreen from './src/screens/ProfileSetupScreen';
@@ -15,7 +14,6 @@ import ProfileScreen from './src/screens/ProfileScreen';
 import FriendSearchScreen from './src/screens/FriendSearchScreen';
 import StatusCreateScreen from './src/screens/StatusCreateScreen';
 
-// Import types
 import { User, EatingStatus } from './src/types';
 
 const Stack = createStackNavigator();
@@ -72,7 +70,7 @@ export default function App() {
   };
 
   if (isLoading) {
-    return null; // You can add a splash screen here
+    return null;
   }
 
   return (
@@ -80,19 +78,16 @@ export default function App() {
       <StatusBar style="auto" />
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {!currentUser ? (
-          // Auth screens
           <>
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="Signup" component={SignupScreen} />
           </>
         ) : currentUser.universityId ? (
-          // Main app
           <>
             <Stack.Screen name="Main" component={TabNavigator} />
             <Stack.Screen name="StatusCreate" component={StatusCreateScreen} />
           </>
         ) : (
-          // Profile setup
           <Stack.Screen name="ProfileSetup" component={ProfileSetupScreen} />
         )}
       </Stack.Navigator>

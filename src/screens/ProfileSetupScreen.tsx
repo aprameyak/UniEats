@@ -54,7 +54,6 @@ export default function ProfileSetupScreen({ navigation }: ProfileSetupScreenPro
 
     setIsLoading(true);
     try {
-      // Get current user and update with university
       const userData = await AsyncStorage.getItem('currentUser');
       if (userData) {
         const user: User = JSON.parse(userData);
@@ -64,7 +63,6 @@ export default function ProfileSetupScreen({ navigation }: ProfileSetupScreenPro
           photoUrl: profileImage || user.photoUrl,
         };
         await AsyncStorage.setItem('currentUser', JSON.stringify(updatedUser));
-        // Navigation will be handled by App.tsx
       }
     } catch (error) {
       Alert.alert('Error', 'Failed to complete setup. Please try again.');
@@ -76,13 +74,11 @@ export default function ProfileSetupScreen({ navigation }: ProfileSetupScreenPro
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>Complete Your Profile</Text>
           <Text style={styles.subtitle}>Tell us about yourself to get started</Text>
         </View>
 
-        {/* Profile Image */}
         <View style={styles.imageSection}>
           <TouchableOpacity style={styles.imageContainer} onPress={pickImage}>
             {profileImage ? (
@@ -96,7 +92,6 @@ export default function ProfileSetupScreen({ navigation }: ProfileSetupScreenPro
           </TouchableOpacity>
         </View>
 
-        {/* University Selection */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Your University</Text>
           <TouchableOpacity
@@ -145,7 +140,6 @@ export default function ProfileSetupScreen({ navigation }: ProfileSetupScreenPro
           )}
         </View>
 
-        {/* Complete Button */}
         <TouchableOpacity
           style={[styles.completeButton, isLoading && styles.completeButtonDisabled]}
           onPress={handleCompleteSetup}

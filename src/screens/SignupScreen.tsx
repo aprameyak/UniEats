@@ -45,7 +45,6 @@ export default function SignupScreen({ navigation }: SignupScreenProps) {
 
     setIsLoading(true);
     try {
-      // Mock signup - in real app, this would be an API call
       const mockUser: User = {
         uid: '1',
         username: username,
@@ -57,7 +56,6 @@ export default function SignupScreen({ navigation }: SignupScreenProps) {
       };
 
       await AsyncStorage.setItem('currentUser', JSON.stringify(mockUser));
-      // Navigation will be handled by App.tsx based on user state
     } catch (error) {
       Alert.alert('Error', 'Signup failed. Please try again.');
     } finally {
@@ -72,7 +70,6 @@ export default function SignupScreen({ navigation }: SignupScreenProps) {
         style={styles.keyboardView}
       >
         <ScrollView contentContainerStyle={styles.scrollContent}>
-          {/* Header */}
           <View style={styles.header}>
             <TouchableOpacity
               style={styles.backButton}
@@ -84,7 +81,6 @@ export default function SignupScreen({ navigation }: SignupScreenProps) {
             <Text style={styles.subtitle}>Join UniEats and connect with friends</Text>
           </View>
 
-          {/* Signup Form */}
           <View style={styles.form}>
             <View style={styles.inputContainer}>
               <Ionicons name="person-outline" size={20} color="#666" style={styles.inputIcon} />

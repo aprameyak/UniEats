@@ -3,7 +3,6 @@ import Link from 'next/link';
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
@@ -29,9 +28,7 @@ export default function PrivacyPage() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
           <p className="text-xl text-gray-600">
@@ -39,7 +36,6 @@ export default function PrivacyPage() {
           </p>
         </div>
 
-        {/* Privacy Content */}
         <div className="bg-white rounded-lg shadow-md p-8 space-y-8">
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
@@ -189,7 +185,6 @@ export default function PrivacyPage() {
           </section>
         </div>
 
-        {/* Footer */}
         <footer className="mt-16 border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-500">
