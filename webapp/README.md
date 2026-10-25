@@ -1,4 +1,4 @@
-# UniEatsAdmin
+# UniEats Web
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white&style=for-the-badge)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB&style=for-the-badge)
@@ -7,7 +7,7 @@
 
 ## About
 
-**UniEatsAdmin** is the companion web application for the UniEats iOS app — a social food platform for university students. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, it serves as the public-facing website providing a landing page, support resources, and privacy policy for App Store compliance.
+**UniEats Web** is the companion web application for the UniEats iOS app — a social food platform for university students. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, it serves as the public-facing website providing a landing page, support resources, and privacy policy for App Store compliance.
 
 ## Features
 
