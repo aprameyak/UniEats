@@ -25,6 +25,7 @@
     "typescript": "^5"
   },
   "overrides": {
-    "postcss": "^8.5.23"
+    "postcss": "^8.5.23",
+    "minimatch@^10.0.0": "^11.0.1"
   }
 }
