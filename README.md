@@ -2,7 +2,7 @@
 
 UniEats is a mobile app prototype for university students who want company for a meal. You post a status such as "Looking to Eat" or "Eating Now" with a campus location, and friends see it in a feed.
 
-The repo holds two apps: the Expo / React Native client at the root, and a small Next.js site in `webapp/` with the landing, support, and privacy pages. The web site is deployed at https://unieats-admin-five.vercel.app.
+The repo holds two apps: the Expo / React Native client at the root, and a small Next.js site in `webapp/` with the landing, support, and privacy pages. The web site is deployed at https://unieatsadmin.aprameyakannan.com.
 
 ## Status
 
